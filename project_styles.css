@@ -1,3 +1,38 @@
+#about,
+#work,
+#projects,
+#contact {
+  scroll-margin-top: 50px;
+}
+
 .jumbotron .container {
   padding: 50px;
+  margin: 20px auto;
+  background-color: gainsboro;
+  border-radius: 5px;
+}
+
+.navbar {
+  height: 80px;
+}
+
+.navbar .navbar-brand {
+  font-size: 25px;
+}
+
+.navbar .nav-link {
+  font-size: 20px;
+}
+
+.jumbotron .display-4 {
+  font-size: 40px;
+  font-weight: 320;
+}
+
+.jumbotron .experience {
+  font-weight: 350;
+}
+
+.container .project_cont {
+  background-color: gray;
 }
