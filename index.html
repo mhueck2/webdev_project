@@ -25,8 +25,18 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
+          
+          <!-- <script>
+              function toggleMenu(){
+                const nav = document.querySelectorAll('.nav-item')
+                nav.forEach(nav => nav.classList.toggle('navbar-toggle-show'))
+              }
+              document.getElementsByClassName('navbar-toggler').addEventListener('click', toggleMenu);
+          </script> -->
+
             <span class="navbar-toggler-icon"></span>
           </button>
+          
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
@@ -42,9 +52,12 @@
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
+            
           </div>
         </div>
       </nav>
+
+<!-- About section -->
       <div class="jumbotron jumbotron-fluid" id="about">
         <div class="container">
           <h1 class="display-4">About</h1>
@@ -61,53 +74,103 @@
           </p>
         </div>
       </div>
+<!-- Work/School experience section -->
       <div class="jumbotron jumbotron-fluid" id="work">
         <div class="container">
           <h1 class="display-4">Experience</h1>
           <p class="lead">
-            <h4 class="experience">Portland State University</h4>
+            <h4 class="sub-header">Portland State University</h4>
             <p>MS Computer Science (2023)</p>
-            <h4 class="experience">The Computer Action Team PSU</h4>
+            <h4 class="sub-header">The Computer Action Team PSU</h4>
             <p>Engineering College Technical Helpdesk Volunteer (2021-) </p>
-            <h4 class="experience">MWH Geo-Surveys</h4>
+            <h4 class="sub-header">MWH Geo-Surveys</h4>
             <p>Geophysical Surveyor (2016-)</p>
-            <h4 class="experience">Willamette University</h4>
-            <p>BA, Environmental Science (2013)</p>
+            <h4 class="sub-header">Willamette University</h4>
+            <p>BA Environmental Science (2013)</p>
                 
           </p>
         </div>
       </div>
+
+<!-- Projects section -->
+<!-- would be cool to have tags eventually (ie personal, school project, project domain etc) -->
       <div class="jumbotron jumbotron-fluid" id="projects">
-        <div class="container">
+        <div class="container project-container">
           <h1 class="display-4">Projects</h1>
-          <p class="lead"></p>
-          <div class="container project_cont">
-              <h4 class="project_text">Solving 8 Queens with a Genetic Algorithm</h4>
-              <img src="../webdev-project/8queens.png" alt="8 queens solution display">
-          </div>
+          <!-- project 1 - 8 queens -->
+            <div class="card project-card" id="project1">
+                <img class="card-image-top project-image" src="https://user-images.githubusercontent.com/103003636/172020300-4de23dd2-a0c3-431e-9552-7ad82fe085df.png" 
+                    width="250px" 
+                    height="250px" 
+                    alt="8 queens solution picture"
+                    class="project-image"
+                >
+                <div class="card-body">
+                    <h4 class="sub-header card-title">Solving the 8 Queens Problem with a Genetic Algorithm</h4>
+                    <p class="card-text">In my Artificial Intelligence class, I implemented an evolution-inspired 
+                        algorithm to solve the 8 Queens problem on an 8x8 board. This is a terminal based python program, and the 
+                        hyperparameters can be configured for an optimal solution.
+                    </p>  
+                    <button type="button" 
+                    class="btn btn-dark" 
+                    onclick="window.location.href='https://github.com/mhueck2/projects/tree/main/8queens'">
+                    See it on GitHub
+                    </button>
+                </div>
+            </div>
+            <!-- project 2 - resource game-->
+            <div class="card project-card" id="project2">
+                <img class="card-image-top project-image" src="https://user-images.githubusercontent.com/103003636/172029992-0238570f-42f5-45b1-900a-cfb9d57d384f.png"
+                    width="250px" 
+                    height="250px" 
+                    alt="resource game screenshot"
+                    class="project-image"
+                >
+                <div class="card-body">
+                    <h4 class="sub-header card-title">A Terminal-Based Resource Trading Game</h4>
+                    <p class="card-text">For my Programming Systems (OOP) class, I wrote a resource trading game 
+                        in C++ that uses object-oriented programming. There is no way to 'win' the game, but the player
+                        can harvest and trade resources across three distinct societies. 
+                    </p>  
+                    <button type="button" 
+                    class="btn btn-dark"  
+                    onclick="window.location.href='https://github.com/mhueck2/projects/tree/main/resource-game'">
+                    See it on GitHub
+                    </button>
+
+                    <!-- <script>
+                        var card = document.getElementsByClassName('card-body')
+                        var button = document.createElement('button');
+                        card.appendChild(button);
+
+                    </script> -->
+                </div>
+            </div>
         </div>
       </div>
+
+<!-- Contact section -->
+<!-- name/email/message/send button  -->
       <div class="jumbotron jumbotron-fluid" id="contact">
         <div class="container">
           <h1 class="display-4">Contact</h1>
           <p class="lead">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim,
-            inventore magni nulla corporis odio impedit, nostrum dolorem, minima
-            suscipit ratione eum! Sunt, quis quo? Exercitationem necessitatibus
-            repellat soluta nesciunt nam. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Necessitatibus soluta commodi asperiores accusamus
-            recusandae suscipit iste sint facilis ratione dolore, odit numquam
-            fuga in enim veritatis quaerat totam dicta dolorem! Molestias
-            nesciunt modi repellendus magnam! Numquam suscipit dignissimos quod
-            fugit quidem dolorum enim quibusdam. Ex, odio fugit sint quia quas
-            aut cum, atque modi quod ad excepturi eligendi? Aperiam, corporis!
-            Odit exercitationem nemo nam suscipit possimus ut dolores amet,
-            magni totam iste ducimus earum eos, dolorum odio explicabo enim est
-            expedita quos consequatur omnis molestias atque. Quasi suscipit
-            saepe atque! Consequatur ipsam iure quo, rem id in odio magnam nemo
-            hic aut corrupti ducimus illum dolores esse iste assumenda
-            accusantium. Quibusdam quo animi, exercitationem suscipit sequi quis
-            sit tenetur velit.
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="name" class="form-control" id="name" aria-describedby="name" placeholder="This is you!">
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Email address</label>
+                  <input type="email" class="form-control" id="contact-email" aria-describedby="emailHelp" placeholder="Your email">
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">Message</label>
+                    <textarea class="form-control" id="contact-message" rows="3" placeholder="Hi Max!"></textarea>
+                </div>
+            </form>
+                <button type="submit" class="btn btn-dark contact-button">Submit</button>
+
           </p>
         </div>
       </div>
