@@ -5,11 +5,16 @@
   scroll-margin-top: 50px;
 }
 
+@media (max-width: 768px) {
+  .navbar-toggle-show {
+    display: flex;
+  }
+}
 .jumbotron .container {
   padding: 50px;
   margin: 20px auto;
   background-color: gainsboro;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .navbar {
@@ -29,10 +34,29 @@
   font-weight: 320;
 }
 
-.jumbotron .experience {
+.jumbotron .sub-header {
   font-weight: 350;
 }
 
-.container .project_cont {
-  background-color: gray;
+.project-card {
+  margin: 20px auto;
+  width: auto;
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.form-group .form-control {
+  border-radius: 5px;
+}
+
+.form-group {
+  margin: 15px;
+}
+
+.contact-button {
+  margin-top: 15px;
+  padding: 15px 20px;
+  border-radius: 10px;
 }
