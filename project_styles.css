@@ -19,11 +19,8 @@
 
 .navbar-dark .navbar-nav .nav-link {
   background-color: #212529;
+  text-align: center;
 }
-
-/* .navbar-nav {
-  width: 100%;
-} */
 
 .navbar {
   height: 80px;
@@ -46,6 +43,12 @@
   font-weight: 350;
 }
 
+@media (max-width: 461px) {
+  #evoImg {
+    height: 231px;
+    width: 173px;
+  }
+}
 .project-card {
   margin: 20px auto;
   width: auto;
