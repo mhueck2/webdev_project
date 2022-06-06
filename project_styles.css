@@ -5,17 +5,25 @@
   scroll-margin-top: 50px;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .navbar-toggle-show {
     display: flex;
   }
-}
+} */
 .jumbotron .container {
   padding: 50px;
   margin: 20px auto;
   background-color: gainsboro;
   border-radius: 10px;
 }
+
+.navbar-dark .navbar-nav .nav-link {
+  background-color: #212529;
+}
+
+/* .navbar-nav {
+  width: 100%;
+} */
 
 .navbar {
   height: 80px;
